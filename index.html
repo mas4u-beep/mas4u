@@ -1,125 +1,13 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Mas4U | ×¤××¨×× ××§××××ª</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <nav class="nav">
-        <div class="nav-brand">
-            <div class="nav-icon">ð</div>
-            <div class="nav-title">
-                Mas4U
-                <div class="nav-sub">×× ×××ª ××©××× ××ª ××××¢××¥ ××¡</div>
-            </div>
-        </div>
-        <div class="nav-user">
-            <div class="nav-avatar">AD</div>
-            <span class="nav-user-name">×××¨× ××§×¨</span>
-        </div>
-    </nav>
-
-    <main class="view active" id="main-view">
-        
-        <div class="banner">
-            <div class="banner-top">
-                <div>
-                    <h2>×××, ×× × ××××××ª ×©××</h2>
-                    <p class="banner-sub">×¢×××× ×××¨××: ××××, 15:30</p>
-                </div>
-                <div class="banner-cid">
-                    <span>××¡' ××§××</span>
-                    <strong>8842</strong>
-                </div>
-            </div>
-            <div class="month-status">
-                <div class="ms-dot amber"></div>
-                <div class="ms-text">××××© ××¤×¨×× ×××ª×× ×××¡×××× ×©××</div>
-                <button class="ms-action">×××××× ××××¨</button>
-            </div>
-        </div>
-
-        <div class="handler-chip">
-            <div class="handler-avatar">×©</div>
-            <div class="handler-info">
-                <div class="handler-lbl">×¨××× ××©××× ×××¤×</div>
-                <div class="handler-name">×©××¢×× ×××¨××ª</div>
-            </div>
-            <a href="https://wa.me/972500000000" class="wa-btn">
-                <span>WhatsApp</span>
-            </a>
-        </div>
-
-        <div class="chart-ctx">
-            <div class="ctx-chip inc">
-                <div class="ctx-val">âª12,450</div>
-                <div class="ctx-lbl">××× ×¡××ª</div>
-            </div>
-            <div class="ctx-chip exp">
-                <div class="ctx-val">âª3,120</div>
-                <div class="ctx-lbl">×××¦×××ª</div>
-            </div>
-            <div class="ctx-chip net">
-                <div class="ctx-val">âª9,330</div>
-                <div class="ctx-lbl">×¨××× × ×§×</div>
-            </div>
-        </div>
-
-        <div class="month-bar">
-            <div class="mpill">×× ××³</div>
-            <div class="mpill">×¤××¨×³</div>
-            <div class="mpill has-docs">××¨×¥</div>
-            <div class="mpill active">××¤×¨×³</div>
-            <div class="mpill locked">×××</div>
-        </div>
-
-        <div class="upload-section">
-            <button class="camera-btn">
-                <span>ð¸ ×¦×× ×§××× ×× ××©××× ××ª</span>
-                <input type="file" accept="image/*" capture="environment" multiple onchange="App.handleUpload(this.files)">
-            </button>
-            
-            <div class="upload-zone">
-                <input type="file" multiple onchange="App.handleUpload(this.files)">
-                <div class="upload-inner">
-                    <div class="upload-icon">ð</div>
-                    <div class="fname">×××¥ ××× ×××××¨×ª ×§××¦×× ×××××¨××</div>
-                </div>
-            </div>
-        </div>
-
-        <div id="file-list-container"></div>
-
-    </main>
-
-    <div class="nav-tabs">
-        <button class="nav-tab active">
-            <span>××£ ××××ª</span>
-        </button>
-        <button class="nav-tab">
-            <span>××¡××××</span>
-        </button>
-        <button class="nav-tab">
-            <span>××××¨××ª</span>
-        </button>
-    </div>
-
-    <div class="sticky-bar" id="sticky-bar">
-        <button class="submit-btn" onclick="App.submitToCRM()">
-            ×©×× ××¡×××× ×××©×¨×
-        </button>
-    </div>
-
-    <button class="a11y-widget-btn" onclick="document.querySelector('.a11y-menu').classList.toggle('show')">â¿</button>
-    <div class="a11y-menu">
-        <button onclick="document.body.classList.toggle('a11y-high-contrast')">× ×××××××ª ×××××</button>
-        <button onclick="document.documentElement.style.setProperty('--font-multiplier', 1.2)">×××× ××§×¡×</button>
-        <button onclick="document.documentElement.style.setProperty('--font-multiplier', 1)">××§×¡× ×¨×××</button>
-    </div>
-
-    <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mas4U | פורטל לקוחות</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
