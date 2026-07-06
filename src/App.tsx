@@ -10,6 +10,7 @@ const Tools = lazy(() => import('@/pages/client/Tools'))
 const Knowledge = lazy(() => import('@/pages/client/Knowledge'))
 const AdminDashboard = lazy(() => import('@/pages/admin/AdminDashboard'))
 const AdminClients = lazy(() => import('@/pages/admin/AdminClients'))
+const AdminSettings = lazy(() => import('@/pages/admin/AdminSettings'))
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route index element={<Navigate to="/admin/dashboard" replace />} />
             <Route path="dashboard" element={<AdminDashboard />} />
             <Route path="clients" element={<AdminClients />} />
+            <Route path="settings" element={<AdminSettings />} />
           </Route>
         </Routes>
       </Suspense>
